@@ -15,7 +15,7 @@
 <body>
 
 <h1>Política de Privacidade — NutriVida</h1>
-<p class="updated">Última atualização: 9 de julho de 2026</p>
+<p class="updated">Última atualização: 24 de novembro de 2026</p>
 
 <p>Esta política explica quais dados o aplicativo NutriVida ("app") coleta, como usamos e como você pode solicitar sua exclusão.</p>
 
@@ -24,10 +24,13 @@
 
 <h2>2. Dados que coletamos</h2>
 <ul>
-  <li><strong>Conta:</strong> e-mail e nome (opcional), usados para login e identificação da sua conta.</li>
+  <li><strong>Conta:</strong> e-mail e nome (opcional), usados para login e identificação da sua conta. Se você entrar com o Google, recebemos do Google seu nome, e-mail e foto de perfil — nunca sua senha.</li>
   <li><strong>Uso do app:</strong> receitas favoritadas, histórico de receitas marcadas como feitas, ingredientes buscados.</li>
   <li><strong>Preferências:</strong> se você ativou lembretes diários (notificações push) e seu status de assinatura (premium/gratuito).</li>
-  <li><strong>Dados técnicos:</strong> não coletamos identificadores de publicidade nem fazemos rastreamento entre apps/sites de terceiros. Não exibimos anúncios.</li>
+  <li><strong>Eventos de uso:</strong> registros simples de ações no app (por exemplo, abrir uma receita ou fazer uma busca), ligados à sua conta, para melhorar o produto.</li>
+  <li><strong>Diagnóstico de erros:</strong> quando o app falha, enviamos um relatório técnico (tipo de erro, modelo do aparelho, versão do Android e do app) para corrigir o problema.</li>
+  <li><strong>Compras:</strong> o pagamento é feito pelo Google Play. Não recebemos dados do seu cartão; recebemos apenas a confirmação de que a assinatura está ativa.</li>
+  <li><strong>O que não coletamos:</strong> identificadores de publicidade, localização ou rastreamento entre apps/sites de terceiros. Não exibimos anúncios.</li>
 </ul>
 
 <h2>3. Como usamos seus dados</h2>
@@ -39,6 +42,16 @@
 </ul>
 <p>Não vendemos, alugamos nem compartilhamos seus dados pessoais com terceiros para fins de marketing.</p>
 
+<h2>3.1 Serviços de terceiros que processam dados em nosso nome</h2>
+<ul>
+  <li><strong>Supabase</strong> — banco de dados, login e armazenamento (servidores em São Paulo, Brasil).</li>
+  <li><strong>Google</strong> — login com conta Google (opcional) e processamento de pagamentos pelo Google Play.</li>
+  <li><strong>RevenueCat</strong> — gerenciamento do status da assinatura Premium, usando o identificador da sua conta.</li>
+  <li><strong>Sentry</strong> — relatórios de erros e falhas do app.</li>
+  <li><strong>SendGrid (Twilio)</strong> — envio de e-mails de confirmação de conta e redefinição de senha.</li>
+</ul>
+<p>Cada um desses serviços recebe apenas os dados necessários para a sua função e segue sua própria política de privacidade.</p>
+
 <h2>4. Onde seus dados ficam armazenados</h2>
 <p>Os dados são armazenados no Supabase (infraestrutura em nuvem sobre PostgreSQL), com controle de acesso por linha (Row Level Security) — cada usuário só acessa seus próprios dados de favoritos, histórico e perfil.</p>
 
@@ -46,7 +59,8 @@
 <p>Se você ativar o lembrete diário, usamos o serviço de push do Expo/Android/iOS apenas para entregar essa notificação. Você pode desativar a qualquer momento na tela de Perfil ou nas configurações do sistema operacional.</p>
 
 <h2>6. Exclusão de conta e dados</h2>
-<p>Você pode excluir sua conta e todos os dados associados (perfil, favoritos, histórico) diretamente pelo app, na tela de Perfil, opção "Excluir conta". A exclusão é permanente e imediata.</p>
+<p>Você pode excluir sua conta e todos os dados associados (perfil, favoritos, histórico) diretamente pelo app, na tela de Perfil, opção "Excluir conta", ou seguindo as instruções em <a href="account-deletion.html">Exclusão de conta e dados</a>. A exclusão é permanente e imediata; os eventos de uso deixam de ser ligados a você e passam a ser anônimos. Relatórios de erro anônimos são apagados automaticamente pelo Sentry em até 90 dias.</p>
+<p><strong>Importante:</strong> excluir a conta não cancela a assinatura no Google Play. Cancele antes em Google Play → Pagamentos e assinaturas.</p>
 
 <h2>7. Seus direitos (LGPD)</h2>
 <p>Você pode, a qualquer momento, solicitar acesso, correção ou exclusão dos seus dados pessoais entrando em contato pelo e-mail abaixo.</p>
